@@ -203,7 +203,7 @@ func main() {
 		var lfh *localFileHeader
 		var next int
 		lfh, next, err = parseLocalFileHeader(f, end)
-		if err == errNotZip && end > 0{
+		if err == errNotZip && end > 0 {
 			break
 		}
 		if err != nil {
